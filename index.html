@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- GOOGLE FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+
+
+    <title>Bean/Bloom</title>
+    <meta name="description" content="A simple HTML CSS and JS starter base">
+
+    <!-- SWIPER CSS - put at the top inside of your head -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css" />
+
+    <!-- MAIN CSS -->
+    <link rel="stylesheet" href="css/style.css">
+
+
+</head>
+
+<body>
+
+    <section class="hero">
+        <form class="order-form">
+          <h2>On your way?</h2>
+          <p>Skip the wait and have your coffee (and blooms) ready when you arrive.</p>
+      
+          <label for="bean">Bean</label>
+          <input type="text" id="bean" name="bean" placeholder="Blossom Latte">
+      
+          <label for="blooms">Blooms</label>
+          <input type="text" id="blooms" name="blooms" placeholder="Blush Charm">
+      
+          <label for="name">Name</label>
+          <input type="text" id="name" name="name">
+      
+          <label for="phone">Phone</label>
+          <input type="tel" id="phone" name="phone">
+      
+          <button type="submit">Order Now</button>
+        </form>
+      </section>
+      
+    <header class="site-header on-top-of-hero">
+        
+        
+        <div class="logo slide-from-top-and-fade-in delay-4">
+ 
+
+            <!-- INLINE IMG LOGO EXAMPLE -->
+            <a href="index.html"><img src="img/bb-logo-framework.png" alt="Simple Base Logo" width="200" height="50"></a>
+
+            <h1 class="hide-visually"><a href="index.html">Simple Base</a></h1>
+
+        </div>
+
+        <nav class="site-nav" data-menustate="closed">
+            <button class="menubutton">
+                <span class="hide-visually">Menu</span>
+                <svg class="simple-navicon" width="24" height="21">
+                    <rect class="simple-navicon-top" x="0" y="2" height="3" width="30"></rect>
+                    <rect class="simple-navicon-middle" x="0" y="9" height="3" width="30"></rect>
+                    <rect class="simple-navicon-bottom" x="0" y="16" height="3" width="30"></rect>
+                </svg>
+            </button>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="styleguide.html">Style Guide</a></li>
+            </ul>
+        </nav>
+
+    </header>
+    
+
+    <main class="site-main">
+
+        <section class="hero text-centered">
+
+                <h1 class="slide-from-left-and-fade-in delay-0">Bean/Bloom</h1>
+                <h2 class="slide-from-left-and-fade-in delay-1">A Simple Starter</h2>
+                <p  class="slide-from-left-and-fade-in delay-2">Simple Base is a basic set of starter HTML, CSS, and Javascript created specifically for building hand-coded 100% custom-designed bespoke static websites that are fast and accessible.</p>
+                <a href="#features" class="button scale-and-fade-in delay-3">See Features</a>
+            
+        </section>
+
+        <!-- ABOUT SECTIION -->
+        <section>
+            <div class="container">
+
+                <div class="row swapped">
+                    <div class="one-half">
+                        <img class="observe-me onscroll-slide-in-from-right" src="img/about-image.png" alt="Placeholder image" width="2000" height="1000">
+                    </div>
+                    <div class="one-half">
+                        <h2 class="observe-me onscroll-slide-in-from-left">The Magic Of Bean/Bloom</h2>
+                        <p class="observe-me onscroll-slide-in-from-left">At Bean / Bloom, coffee and flowers come together to brighten the everyday. Our café blends the warmth of a handcrafted latte with the beauty of fresh blooms, creating a space that feels calm, inviting, and full of life.
+                            Whether you’re stopping in for your morning coffee, picking up a bouquet for someone special, or just taking a quiet moment for yourself, we’re here to make it meaningful. Every sip and every stem is crafted with carebecause little moments deserve to feel beautiful..</p>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- SWIPER SLIDER SECTION -->
+         
+        <section>
+            <h2>Bean/Bloom INSIDE</h2>
+         <!-- Slider main container -->
+         <div class="swiper">
+            <!-- Additional required wrapper -->
+            <div class="swiper-wrapper">
+            <!-- Slides -->
+            <div class="swiper-slide">
+                <img src="img/bb-interior-1.png" alt="placeholder image">
+        <!--       <p>This is a caption</p> -->
+            </div>
+            <div class="swiper-slide">
+                <img src="img/bb-interior-2.png" alt="placeholder image">
+        <!--       <p>This is a caption</p> -->
+            </div>
+            <div class="swiper-slide">
+                <img src="https://placehold.co/800x400/yellow/black" alt="placeholder image">
+        <!--       <p>This is a caption</p> -->
+            </div>
+            </div>
+            <!-- If we need pagination -->
+            <div class="swiper-pagination"></div>
+        
+            <!-- If we need navigation buttons -->
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+        
+        </div>
+        </section>
+
+        <!-- CONTACT SECTIION -->
+        <section>
+            <div class="container">
+
+                <div class="row swapped">
+                    <div class="one-half">
+                        <img class="observe-me onscroll-slide-in-from-right" src="img/contact-image.png" alt="Placeholder image" width="2000" height="1000">
+                    </div>
+                    <div class="one-half">
+                        <h2 class="observe-me onscroll-slide-in-from-left">Lets Bloom Together Always</h2>
+                        <p class="observe-me onscroll-slide-in-from-left">Looking for the perfect bouquet or have a question about our coffee? We’d love to hear from you!. 
+                            Visit us: 123 Blossom LaneCall us: 808) 555-1234Email: hello@beanandbloom.com 
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        
+        
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="site-footer">
+        <div class="container">
+
+            <div class="row">
+                <div class="col-6">
+                    <h2>About Simple Base</h2>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Provident necessitatibus quod quae quasi officiis assumenda natus quis error, iste quo?</p>
+                </div>
+                <div class="col-3 push-9">
+                    <h2>Pages</h2>
+                    <nav>
+                        <ul>
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="stlyeguide.html">Style Guide</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+
+
+        </div>
+    </footer>
+
+     <!-- SWIPER JS - put at the bottom inside of your body -->
+<script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
+
+<script>
+const swiper = new Swiper('.swiper', {
+    // Optional parameters
+    loop: true,
+  
+    // If we need pagination
+    pagination: {
+      el: '.swiper-pagination',
+    },
+  
+    // Navigation arrows
+    navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
+    },
+  
+  
+  });</script>
+
+    <!-- MAIN JS -->
+    <script src="js/script.js"></script>
+
+</body>
+
+</html>
