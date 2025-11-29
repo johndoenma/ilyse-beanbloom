@@ -1,230 +1,349 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <!-- GOOGLE FONTS -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+  <!-- GOOGLE FONTS -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
 
+  <title>Bean/Bloom</title>
+  <meta name="description" content="A simple HTML CSS and JS starter base">
 
-    <title>Bean/Bloom</title>
-    <meta name="description" content="A simple HTML CSS and JS starter base">
+  <!-- SWIPER CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css">
 
-    <!-- SWIPER CSS - put at the top inside of your head -->
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css" />
-
-    <!-- MAIN CSS -->
-    <link rel="stylesheet" href="css/style.css">
-
-
+  <!-- MAIN CSS -->
+  <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
-      
-    <header class="site-header on-top-of-hero">
-        
-        
-        <div class="logo slide-from-top-and-fade-in delay-4">
- 
 
-            <!-- INLINE IMG LOGO EXAMPLE -->
-            <a href="index.html"><img src="img/bb-logo-framework.png" alt="Simple Base Logo" width="200" height="50"></a>
+  <!-- HEADER -->
+  <header class="site-header on-top-of-hero">
+    <div class="logo slide-from-top-and-fade-in delay-4">
+      <a href="index.html">
+        <img src="img/bean-bloom-logo.png" alt="Simple Base Logo" width="200" height="50">
+      </a>
+      <h1 class="hide-visually"><a href="index.html">Bean Bloom</a></h1>
+    </div>
 
-            <h1 class="hide-visually"><a href="index.html">Simple Base</a></h1>
+    <nav class="site-nav" data-menustate="closed">
+      <button class="menubutton">
+        <span class="hide-visually">Menu</span>
+        <svg class="simple-navicon" width="24" height="21">
+          <rect class="simple-navicon-top" x="0" y="2" height="3" width="30"></rect>
+          <rect class="simple-navicon-middle" x="0" y="9" height="3" width="30"></rect>
+          <rect class="simple-navicon-bottom" x="0" y="16" height="3" width="30"></rect>
+        </svg>
+      </button>
+
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="styleguide.html">Style Guide</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- MAIN -->
+  <main class="site-main">
+
+    <!-- HERO -->
+    <section class="hero text-centered">
+      <div class="container">
+        <div class="row">
+
+          <div class="col-7">
+            <div class="featured-pairings">
+              <h2>
+                <span class="featured-bold">Featured</span> 
+                <span class="pairings-script">Pairings</span> 
+                <span class="featured-bold">Of The Week</span>
+              </h2>
+              <div class="pairings-row">
+                <div class="pairing-item">
+                  <img src="img/blossomcoffee.png" alt="Blossom Latte" class="pairing-img">
+                  <div>
+                    <span class="pairings-script">Blossom</span>
+                    <span class="featured-bold">Latte</span>
+                  </div>
+                </div>
+                <div class="pairing-item">
+                  <img src="img/pure-grace.png" alt="Pure Grace Bouquet" class="pairing-img">
+                  <div>
+                    <span class="pairings-script">Pure</span>
+                    <span class="featured-bold">Grace</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            
+          </div>
+
+          <div class="col-5">
+            <section class="preorder-form">
+              <h2 class="form-heading">On your way?</h2>
+              <p class="form-subheading">
+                Skip the wait and have your coffee (and blooms) ready when you arrive.
+              </p>
+
+              <form>
+                <label for="bean">Bean</label>
+                <input id="bean" name="bean" type="text" placeholder="Blossom Latte">
+
+                <label for="blooms">Blooms</label>
+                <input id="blooms" name="blooms" type="text" placeholder="Blush Charm">
+
+                <label for="name">Name</label>
+                <input id="name" name="name" type="text">
+
+                <label for="phone">Phone</label>
+                <input id="phone" name="phone" type="text">
+
+                <button type="submit" class="order-btn">Order Now</button>
+              </form>
+            </section>
+          </div>
 
         </div>
+      </div>
 
-        <nav class="site-nav" data-menustate="closed">
-            <button class="menubutton">
-                <span class="hide-visually">Menu</span>
-                <svg class="simple-navicon" width="24" height="21">
-                    <rect class="simple-navicon-top" x="0" y="2" height="3" width="30"></rect>
-                    <rect class="simple-navicon-middle" x="0" y="9" height="3" width="30"></rect>
-                    <rect class="simple-navicon-bottom" x="0" y="16" height="3" width="30"></rect>
-                </svg>
-            </button>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="styleguide.html">Style Guide</a></li>
-            </ul>
-        </nav>
+      <div class="hero-leaves1"></div>
+      <div class="hero-leaves2"></div>
+    </section>
 
-    </header>
-    
+    <!-- ABOUT -->
+    <section>
+      <div class="container">
+        <div class="row">
 
-    <main class="site-main">
+          <div class="one-half">
+            <h2 class="about-heading observe-me onscroll-slide-in-from-left">
+              <span class="block-the">The</span>
+              <span class="script-magic">Magic</span><br>
+              <span class="block-of">of Bean / Bloom</span>
+            </h2>
 
-        <section class="hero text-centered">
+            <p class="observe-me onscroll-slide-in-from-left">
+              At Bean / Bloom, coffee and flowers come together to brighten the everyday. Our café blends the warmth of a handcrafted latte with the beauty of fresh blooms, creating a space that feels calm, inviting, and full of life.
+              Whether you’re stopping in for your morning coffee, picking up a bouquet for someone special, or just taking a quiet moment for yourself, we’re here to make it meaningful. Every sip and every stem is crafted with care because little moments deserve to feel beautiful.
+            </p>
+          </div>
 
-            <div class="container">
+          <div class="one-half">
+            <img class="observe-me onscroll-slide-in-from-right" src="img/about-image.png" alt="Placeholder image" width="2000" height="1000">
+          </div>
 
-                <div class="row">
-
-                    <div class="col-7">
-                        <h1 class="slide-from-left-and-fade-in delay-0">Bean/Bloom</h1>
-                        <h2 class="slide-from-left-and-fade-in delay-1">A Simple Starter</h2>
-                        <p  class="slide-from-left-and-fade-in delay-2">Simple Base is a basic set of starter HTML, CSS, and Javascript created specifically for building hand-coded 100% custom-designed bespoke static websites that are fast and accessible.</p>
-                        <a href="#features" class="button scale-and-fade-in delay-3">See Features</a>
-                    </div>
-
-                    <div class="col-5">
-
-                        <form class="order-form">
-                            <h2>On your way?</h2>
-                            <p>Skip the wait and have your coffee (and blooms) ready when you arrive.</p>
-                        
-                            <label for="bean">Bean</label>
-                            <input type="text" id="bean" name="bean" placeholder="Blossom Latte">
-                        
-                            <label for="blooms">Blooms</label>
-                            <input type="text" id="blooms" name="blooms" placeholder="Blush Charm">
-                        
-                            <label for="name">Name</label>
-                            <input type="text" id="name" name="name">
-                        
-                            <label for="phone">Phone</label>
-                            <input type="tel" id="phone" name="phone">
-                        
-                            <button type="submit">Order Now</button>
-                        </form>
-
-                    </div>
-
-                </div>
-            
-            </div>
-
-            <div class="hero-leaves1"></div>
-            <div class="hero-leaves2"></div>
-            
-        </section>
-
-        <!-- ABOUT SECTIION -->
-        <section>
-            <div class="container">
-
-                <div class="row swapped">
-                    <div class="one-half">
-                        <img class="observe-me onscroll-slide-in-from-right" src="img/about-image.png" alt="Placeholder image" width="2000" height="1000">
-                    </div>
-                    <div class="one-half">
-                        <h2 class="observe-me onscroll-slide-in-from-left">The Magic Of Bean/Bloom</h2>
-                        <p class="observe-me onscroll-slide-in-from-left">At Bean / Bloom, coffee and flowers come together to brighten the everyday. Our café blends the warmth of a handcrafted latte with the beauty of fresh blooms, creating a space that feels calm, inviting, and full of life.
-                            Whether you’re stopping in for your morning coffee, picking up a bouquet for someone special, or just taking a quiet moment for yourself, we’re here to make it meaningful. Every sip and every stem is crafted with carebecause little moments deserve to feel beautiful..</p>
-                    </div>
-                </div>
-
-            </div>
-        </section>
-
-        <!-- SWIPER SLIDER SECTION -->
-         
-        <section>
-            <h2>Bean/Bloom INSIDE</h2>
-         <!-- Slider main container -->
-         <div class="swiper">
-            <!-- Additional required wrapper -->
-            <div class="swiper-wrapper">
-            <!-- Slides -->
-            <div class="swiper-slide">
-                <img src="img/bb-interior-1.png" alt="placeholder image">
-        <!--       <p>This is a caption</p> -->
-            </div>
-            <div class="swiper-slide">
-                <img src="img/bb-interior-2.png" alt="placeholder image">
-        <!--       <p>This is a caption</p> -->
-            </div>
-            <div class="swiper-slide">
-                <img src="https://placehold.co/800x400/yellow/black" alt="placeholder image">
-        <!--       <p>This is a caption</p> -->
-            </div>
-            </div>
-            <!-- If we need pagination -->
-            <div class="swiper-pagination"></div>
-        
-            <!-- If we need navigation buttons -->
-            <div class="swiper-button-prev"></div>
-            <div class="swiper-button-next"></div>
-        
         </div>
-        </section>
+      </div>
+    </section>
 
-        <!-- CONTACT SECTIION -->
-        <section>
-            <div class="container">
+    <!-- SWIPER SLIDER -->
+    <section>
+      <div class="inside-heading">
+        <span class="inside-script">Bean/Bloom</span>
+        <span class="inside-title">INSIDE</span>
+      </div>
 
-                <div class="row swapped">
-                    <div class="one-half">
-                        <img class="observe-me onscroll-slide-in-from-right" src="img/contact-image.png" alt="Placeholder image" width="2000" height="1000">
-                    </div>
-                    <div class="one-half">
-                        <h2 class="observe-me onscroll-slide-in-from-left">Lets Bloom Together Always</h2>
-                        <p class="observe-me onscroll-slide-in-from-left">Looking for the perfect bouquet or have a question about our coffee? We’d love to hear from you!. 
-                            Visit us: 123 Blossom LaneCall us: 808) 555-1234Email: hello@beanandbloom.com 
-                        </p>
-                    </div>
-                </div>
+      <div class="swiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <img src="img/bb-interior-1.png" alt="placeholder image">
+          </div>
+          <div class="swiper-slide">
+            <img src="img/bb-interior-2.png" alt="placeholder image">
+          </div>
+          <div class="swiper-slide">
+            <img src="https://placehold.co/800x400/yellow/black" alt="placeholder image">
+          </div>
+        </div>
 
-            </div>
-        </section>
+        <div class="swiper-pagination"></div>
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+      </div>
+    </section>
 
-        
-        
-    </main>
+    <!-- BEAN MENU -->
+    <section class="bean-menu">
 
-    <!-- FOOTER -->
-    <footer class="site-footer">
         <div class="container">
 
-            <div class="row">
-                <div class="col-6">
-                    <h2>About Simple Base</h2>
-                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Provident necessitatibus quod quae quasi officiis assumenda natus quis error, iste quo?</p>
-                </div>
-                <div class="col-3 push-9">
-                    <h2>Pages</h2>
-                    <nav>
-                        <ul>
-                            <li><a href="index.html">Home</a></li>
-                            <li><a href="stlyeguide.html">Style Guide</a></li>
-                        </ul>
-                    </nav>
-                </div>
-            </div>
+      <div class="menu-heading">
+        <span class="menu-script">The Bean</span>
+        <span class="menu-title">MENU</span>
+      </div>
 
+      <div class="menu-columns">
+
+        <div class="menu-column">
+          <h3 class="menu-script">Coffee</h3>
+          <ul class="menu-list">
+            <li><span class="menu-item"><strong>Espresso</strong> <span class="menu-description">- bold</span></span> <span class="menu-price">$3.50</span></li>
+            <li><span class="menu-item"><strong>Americano</strong> <span class="menu-description">- smooth, classic</span></span> <span class="menu-price">$5.00</span></li>
+            <li><span class="menu-item"><strong>Latte</strong> <span class="menu-description">- creamy, cozy</span></span> <span class="menu-price">$5.75</span></li>
+            <li><span class="menu-item"><strong>Cappuccino</strong> <span class="menu-description">- light foam, strong flavor</span></span> <span class="menu-price">$6.25</span></li>
+            <li><span class="menu-item"><strong>Mocha</strong> <span class="menu-description">- chocolate-infused latte</span></span> <span class="menu-price">$6.80</span></li>
+            <li><span class="menu-item"><strong>Cold Brew</strong> <span class="menu-description">- slow-steeped, refreshing</span></span> <span class="menu-price">$5.50</span></li>
+          </ul>
+
+          <h3 class="menu-script">Treats</h3>
+          <ul class="menu-list treats-list">
+            <li><span class="menu-item"><strong>Daily Pastry Selection</strong></span></li>
+            <li><span class="menu-item"><strong>Seasonal Bites</strong></span></li>
+          </ul>
+        </div>
+
+        <div class="menu-column">
+          <h3 class="menu-script">Floral Brews</h3>
+          <ul class="menu-list">
+            <li><span class="menu-item"><strong>Bloom Latte</strong> <span class="menu-description">- lavender-infused, floral finish</span></span> <span class="menu-price">$6.50</span></li>
+            <li><span class="menu-item"><strong>Rose Mocha</strong> <span class="menu-description">- cocoa & rose petals</span></span> <span class="menu-price">$6.75</span></li>
+            <li><span class="menu-item"><strong>Honey Blossom Cold Brew</strong> <span class="menu-description">- sweet, fragrant</span></span> <span class="menu-price">$6.50</span></li>
+            <li><span class="menu-item"><strong>Vanilla Daisy Latte</strong> <span class="menu-description">- smooth vanilla, delicate floral</span></span> <span class="menu-price">$6.50</span></li>
+            <li><span class="menu-item"><strong>Golden Marigold Chai</strong> <span class="menu-description">- spiced chai with warm golden glow</span></span> <span class="menu-price">$6.50</span></li>
+          </ul>
+
+          <h3 class="menu-script">Milk Alternatives</h3>
+          <ul class="menu-list milk-list">
+            <li><span class="menu-item"><strong>Oat Milk</strong></span></li>
+            <li><span class="menu-item"><strong>Almond Milk</strong></span></li>
+            <li><span class="menu-item"><strong>Soy Milk</strong></span></li>
+            <li><span class="menu-item"><strong>Coconut Milk</strong></span></li>
+          </ul>
+        </div>
+
+      </div>
+
+      <div class="menu-images">
+        <div class="menu-img mochacoffee-img">    
+            <img src="img/mochacoffee.png" alt="Mocha Coffee">
+        </div>
+        <div class="menu-img icedcoffee-img">    
+            <img src="img/icedcoffee.png" alt="Iced Coffee">
+        </div>
+        <div class="menu-img smallcoffee-img">    
+            <img src="img/smallcoffee.png" alt="Small Coffee">
+        </div>
+        <div class="menu-img lavendercoffee-img">    
+            <img src="img/lavendercoffee (1).png" alt="Lavender Coffee">
+        </div>
+        <!-- <img src="img/lavendercoffee (1).png" alt="Lavender Cold Brew" class="menu-img lavender-img">
+        <img src="img/icedcoffee.png" alt="Iced Coffee" class="menu-img icedcoffee-img">
+        <img src="img/smallcoffee.png" alt="Small Coffee" class="menu-img smallcoffee-img"> -->
+      </div>
+    </div>
+    </section>
+
+    <!-- BLOOM MENU -->
+    <section class="bloom-menu">
+      <h2 class="menu-heading">MENU</h2>
+      <div class="card-grid">
+        <div class="menu-card">
+          <button class="menu-btn">Order <strong>Blush Charm</strong> $65</button>
+        </div>
+        <div class="menu-card">
+          <button class="menu-btn">Order <strong>Berry Bright</strong> $65</button>
+        </div>
+        <div class="menu-card">
+          <button class="menu-btn">Order <strong>Pure Grace</strong> $72</button>
+        </div>
+        <div class="menu-card">
+          <button class="menu-btn">Order <strong>Evening Glow</strong> $70</button>
+        </div>
+        <div class="menu-card">
+          <button class="menu-btn">Order <strong>Golden Garden</strong> $68</button>
+        </div>
+        <div class="menu-card">
+          <button class="menu-btn">Order <strong>Wild Bloom</strong> $68</button>
+        </div>
+      </div>
+    </section>
+    
+    <img class="bloom-menu-image" src="img/bloom-menu-leaves.png" alt="Bloom Menu Leaves" width="2000" height="1000">
+
+    <!-- CONTACT -->
+    <section>
+      <div class="container">
+        <div class="row swapped">
+
+          <div class="one-half">
+            <img class="observe-me onscroll-slide-in-from-right" src="img/contact-image.png" alt="Placeholder image" width="2000" height="1000">
+          </div>
+
+          <div class="one-half">
+            <h2 class="observe-me onscroll-slide-in-from-left contact-heading">
+              <span class="playfair-heading">Lets</span>
+              <span class="great-vibes-heading">Bloom</span>
+              <span class="playfair-heading">Together Always</span>
+            </h2>
+
+            <p class="observe-me onscroll-slide-in-from-left">
+              Looking for the perfect bouquet or have a question about our coffee?  
+              We’d love to hear from you!  
+              Visit us: 123 Blossom Lane  
+              Call us: (808) 555-1234  
+              Email: hello@beanandbloom.com
+            </p>
+          </div>
 
         </div>
-    </footer>
+      </div>
+    </section>
 
-     <!-- SWIPER JS - put at the bottom inside of your body -->
-<script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
+  </main>
 
-<script>
-const swiper = new Swiper('.swiper', {
-    // Optional parameters
-    loop: true,
-  
-    // If we need pagination
-    pagination: {
-      el: '.swiper-pagination',
-    },
-  
-    // Navigation arrows
-    navigation: {
-      nextEl: '.swiper-button-next',
-      prevEl: '.swiper-button-prev',
-    },
-  
-  
-  });</script>
+  <!-- FOOTER -->
+  <footer class="beanbloom-footer">
+    <div class="bb-footer-content">
 
-    <!-- MAIN JS -->
-    <script src="js/script.js"></script>
+      <div class="bb-footer-col bb-footer-contact">
+        <p>
+          hello@beanandbloom.com<br>
+          (808) 555-1234<br>
+          123 Blossom Lane,<br>
+          Honolulu, HI 96815
+        </p>
+      </div>
+
+      <div class="bb-footer-col bb-footer-logo">
+        <img src="bean-bloom-logo.png" alt="Bean Bloom logo" class="footer-logo">
+
+        <div class="bb-footer-nav">
+          <a href="#">Our Story</a>
+          <a href="#">Bean Menu</a>
+          <a href="#">Bloom Menu</a>
+          <a href="#">Contact</a>
+        </div>
+      </div>
+
+      <div class="bb-footer-col bb-footer-social">
+        <img src="social-icons.png" alt="Social icons" class="footer-social-icons">
+        <p>@beanbloom</p>
+      </div>
+
+    </div>
+    
+  </footer>
+
+  <!-- SWIPER JS -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
+
+  <script>
+    const swiper = new Swiper('.swiper', {
+      loop: true,
+      pagination: { el: '.swiper-pagination' },
+      navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev'
+      }
+    });
+  </script>
+
+  <!-- MAIN JS -->
+  <script src="js/script.js"></script>
 
 </body>
-
 </html>
